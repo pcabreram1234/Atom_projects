@@ -1,0 +1,27 @@
+<HTML>
+<SCRIPT LANGUAGE="JavaScript">
+// PROG057.HTM
+var x;
+var salida="";
+var letras=new Array();
+var numeros=new Array();
+x=prompt("Escribe una palabra o frase","");
+for(i=0;i<=x.length;i++)
+{
+numeros[i]=x.charCodeAt(i);
+letras[i]=String.fromCharCode(numeros[i]);
+salida=salida+letras[i]+" = "+numeros[i]+"\n";
+}
+alert(salida);
+alert(SumaASCII(x));
+function SumaASCII(frase)
+{
+var aux=0;
+for(i=0;i<frase.length;i++)
+{
+aux += frase.charCodeAt(i);
+}
+return aux;
+}
+</SCRIPT>
+</HTML>

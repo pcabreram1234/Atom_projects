@@ -1,0 +1,18 @@
+<HTML>
+<SCRIPT LANGUAGE="JavaScript">
+// PROG049b.HTM
+function recta(a,b)
+{
+salida="Tabla de valores de y = "+a+"x + "+b+"\n";
+for(i=-5;i<=5;i++)
+{
+y=a*i+b;
+salida=salida+"X = "+i+"\t"+"Y = "+y+"\n";
+}
+return salida;
+}
+m=parseFloat(prompt("Tabla de valores de y = mx + n\nEscribe el valor de m",""));
+n=parseFloat(prompt("Tabla de valores de y = mx + n\nEscribe el valor de n",""));
+alert(recta(m,n));
+</SCRIPT>
+</HTML>

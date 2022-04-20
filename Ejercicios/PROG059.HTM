@@ -1,0 +1,37 @@
+<HTML>
+<SCRIPT LANGUAGE="JavaScript">
+// PROG059.HTM
+/* Texto animado */
+var velocidad=200;
+var letras;
+function animar()
+{
+letras=new Array();
+var texto="Uso de cadenas con JavaScript para efectos dinámicos";
+for(i=0;i<texto.length;i++)
+{
+letras[i]=texto.charAt(i);
+}
+mueveLetras();
+}
+var TextoAct="";
+var n=-1;
+function mueveLetras()
+{
+n++;
+TextoAct += letras[n];
+document.forms[0].TextoDinamico.value=TextoAct;
+if(n==letras.length-1)
+{
+n=-1;
+TextoAct="";
+}
+setTimeout("mueveLetras()",velocidad);
+}
+</SCRIPT>
+<BODY onload=animar();>
+<FORM>
+<INPUT TYPE="text" NAME="TextoDinamico" VALUE="" SIZE="120">
+</FORM>
+</BODY>
+</HTML>

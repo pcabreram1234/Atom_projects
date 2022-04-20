@@ -1,0 +1,23 @@
+<HTML>
+<SCRIPT LANGUAGE="JavaScript">
+//PROG051a.HTM
+var x=new Array();
+var med;
+var y=0;
+var i=0;
+var sum=0;
+while(y != 9999)
+{
+y=parseFloat(prompt("Introduce un valor\npara acabar escribe 9999","9999"));
+x[i]=y;
+i++;
+}
+x[i]=0;
+for(j=0;j<i-1;j++)
+{
+sum=sum+x[j];
+}
+med=sum/j;
+alert("La media es "+med);
+</SCRIPT>
+</HTML>

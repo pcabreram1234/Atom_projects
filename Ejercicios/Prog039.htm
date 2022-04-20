@@ -1,0 +1,18 @@
+<HTML>
+<SCRIPT LANGUAGE="JavaScript">
+// PROG039.HTM
+alert("Programa que ahora llamará a una función");
+mediageo();
+alert("Se acabó lo que se daba");
+/* ¡Atención!: a continuación tenemos la función */
+function mediageo()
+{
+var a,b;
+a=prompt("Escribe un número","");
+a=parseFloat(a);
+b=prompt("Escribe otro número","");
+b=parseFloat(b);
+alert("La media geométrica de "+ a +" y "+ b +" es "+Math.sqrt(a*b));
+}
+</SCRIPT>
+</HTML>

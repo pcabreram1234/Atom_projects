@@ -1,0 +1,24 @@
+<HTML>
+<SCRIPT LANGUAGE="JavaScript">
+// PROG048.HTM
+var x,y,aux,resto;
+x=prompt("Escribe un número","");
+x=parseInt(x,10);
+y=prompt("Escribe el otro número","");
+y=parseInt(y,10);
+if (x<y)
+{
+aux=x;
+x=y;
+y=aux;
+}
+if ((x % y)==0) resto=y;
+while ((x % y) != 0)
+{
+resto=x%y;
+x=y;
+y=resto;
+}
+alert("El MCD es "+resto);
+</SCRIPT>
+</HTML>

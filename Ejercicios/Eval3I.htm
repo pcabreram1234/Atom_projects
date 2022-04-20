@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <script type="text/javascript">
+var opc;
+
+opc=prompt("Cuantas multiplicaciones desea realizar?");
+opc=parseInt(opc);
+
+multiplicar(opc);
+function multiplicar(x)
+{
+  var a=1;
+  var n=1;
+  var resultado;
+  var pregunta;
+  var califiacion=0;
+
+for (var i = 1; i <=x; i++) {
+  n=parseInt(Math.round(12-1)*Math.random()+n);
+  a=parseInt(Math.round(12-1)*Math.random()+n);
+  resultado=a*n;
+  pregunta=parseInt(prompt("Favor de escribir el resultado de multiplicar "+n+"X"+a));
+if (pregunta==resultado) {
+  califiacion=califiacion+1;
+}
+}
+alert("Tu califacacion es de "+califiacion);
+}
+    </script>
+  </body>
+</html>

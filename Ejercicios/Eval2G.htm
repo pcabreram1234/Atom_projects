@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+<script>
+  var xmax, xmin, variacion, y;
+  xmin=parseInt(prompt("Favor de introducir el valor minimo de x"));
+  xmax=parseInt(prompt("Favor de introducir el valor maximo de x"));
+  variacion=parseInt(prompt("Favor de introducir el incremento de x"));
+
+
+  for (var i = variacion; i = xmax; i++) {
+    y=parseInt(Math.sin((7*xmin)-5));
+    xmin=variacion+xmin;
+    alert("El resultado es "+y);
+  }
+
+
+
+
+</script>
+  </body>
+</html>

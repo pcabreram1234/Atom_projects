@@ -1,0 +1,21 @@
+<HTML>
+<SCRIPT LANGUAGE="JavaScript">
+// PROG046.HTM
+var num,numDecimales;
+num=prompt("Escribe un número decimal","");
+num=parseFloat(num);
+numDecimales=prompt("Escribe el número de decimales","");
+numDecimales=parseInt(numDecimales,10);
+alert("El número "+num+" con "+numDecimales+" decimales = "+Aproxi(num,numDecimales));
+function Aproxi(n,d)
+{
+cifra=1;
+for(i=1;i<=d;i++)
+{
+cifra *= 10;
+/* recuerda que "cifra *= 10" es equivalente a "cifra=cifra*10" */
+}
+return Math.round(n*cifra)/cifra;
+}
+</SCRIPT>
+</HTML>

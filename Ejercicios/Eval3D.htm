@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <script type="text/javascript">
+
+    var a, b,c;
+
+    a=parseFloat(prompt("Favor de digitar el primer numero"));
+    b =parseFloat(prompt("Favor de digitar el segundo numero"));
+    c=parseFloat(prompt("Favor de digitar el tercer numero"));
+    alert("El modulo del vector "+a+","+b+","+c+" es igual a "+ parseInt(vector(a,b,c)));
+      function vector(x,y,z)
+      {
+        var vector;
+        vector=Math.sqrt((x*x)+(y*y)+(z*z));
+        return vector;
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,20 @@
+<HTML>
+<SCRIPT LANGUAGE="JavaScript">
+// PROG052.HTM
+alert(GeneraLetras());
+function GeneraLetras()
+{
+var n;
+n=parseInt(prompt("Cuántas letras quieres (1 a 26)",""));
+if (isNaN(n)==true) return;
+if (n<1) n=1;
+if (n>28) n=26;
+var Letras=new Array(n);
+for (i=0;i<=Letras.length-1;i++)
+{
+Letras[i]=String.fromCharCode(65+i);
+}
+return Letras;
+}
+</SCRIPT>
+</HTML>

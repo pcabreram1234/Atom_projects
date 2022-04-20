@@ -1,0 +1,15 @@
+<HTML>
+<SCRIPT LANGUAGE="JavaScript">
+// PROG056.HTM
+var x;
+x=prompt("Escribe una palabra o frase","");
+var letras=new Array();
+var numeros=new Array();
+for(i=0;i<x.length;i++)
+{
+numeros[i]=x.charCodeAt(i);
+letras[i]=String.fromCharCode(numeros[i]);
+}
+alert(letras+"\n"+numeros);
+</SCRIPT>
+</HTML>

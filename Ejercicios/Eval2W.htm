@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Examen de multiplacion</title>
+  </head>
+  <body>
+<script>
+  var num1, num2;
+  var opc=0;
+  var pregunta;
+
+    for (var i = 1; i <11; i++) {
+    num1=parseInt(Math.random()*Math.round(12,1));
+    num2=parseInt(Math.random()*Math.round(12,1));
+    resultado=parseInt(num1*num2);
+    pregunta=prompt("Favor de escribir el resultado de la multiplicacion "+num1+"X"+num2);
+
+    if (pregunta==resultado) {
+      opc=opc+1
+    }
+  }
+
+  alert("Tu califacion ha sido de "+opc+" puntos");
+</script>
+  </body>
+</html>

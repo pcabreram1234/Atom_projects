@@ -1,0 +1,21 @@
+<HTML>
+<SCRIPT LANGUAGE="JavaScript">
+// PROG041.HTM
+/* Programa Principal */
+var x,y,result;
+x=prompt("Escribe el primer sumando","");
+x=parseFloat(x);
+y=prompt("Escribe el segundo sumando","");
+y=parseFloat(y);
+/* A continuación llamo a la función para calcular
+el cuadrado de la suma de x e y */
+result=SumaCuadrado(x,y);
+alert("El cuadrado de la suma de "+ x +" y "+ y +" es "+result);
+// Fin del programa principal
+/* A continuación tengo la definición de la función */
+function SumaCuadrado(a,b)
+{
+return (a*a+b*b+2*a*b);
+}
+</SCRIPT>
+</HTML>

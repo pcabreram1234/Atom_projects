@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+<script>
+  var numero;
+  var x=0;
+  var anterior=0;
+  var producto=1;
+
+
+  do {
+    numero=parseInt(prompt("Favor de introdicir un numero"));
+    anterior=anterior+numero;
+    if (numero!=9999) {
+      producto=producto*numero;
+    }
+    else {
+      producto=producto*1;
+    }
+
+    x=x+1;
+  } while (numero!=9999);
+
+  switch (numero) {
+          case numero=9999:
+          anterior=anterior-9999;
+          x=x-1;
+  alert("La cantidad de numeros introducidos es de "+x);
+  alert("La suma de todos los digitos es "+ anterior);
+  alert("La multiplicacion de todos los numeros es "+producto);
+        break;
+    default:
+
+  }
+</script>
+  </body>
+</html>

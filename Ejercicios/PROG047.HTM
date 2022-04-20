@@ -1,0 +1,20 @@
+HTML>
+<SCRIPT LANGUAGE="JavaScript">
+// PROG047.HTM
+var num;
+num=prompt("Escribe un número: ","");
+num=parseFloat(num);
+alert("El signo de "+num+" es "+Signo(num));
+function Signo(x)
+{
+if(x != 0)
+{
+return x/Math.abs(x);
+}
+else
+{
+return 0;
+}
+}
+</SCRIPT>
+</HTML>

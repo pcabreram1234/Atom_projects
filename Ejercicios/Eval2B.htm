@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+<script>
+
+  var num1, num2, resultado;
+  var pregunta;
+  var opc=0
+  num1=parseInt(prompt("Favor de escrbir un numero positivo menor de 57"));
+  num2=parseInt(prompt("Favor de escrbir otro numero positivo menor de 57"))
+
+  if (num1>57 || num1<1 || num2>57 ||num2<1){
+pregunta=prompt("Alguno o ambos numeros son negativos o mayores que 57"+"\n"+
+                "Desea intentarlo nuevamente? S/N");
+              }
+                  switch (pregunta) {
+                    case "S":
+                    num1=parseInt(prompt("Favor de escrbir un numero positivo menor de 57"));
+                    num2=parseInt(prompt("Favor de escrbir otro numero positivo menor de 57"))
+                    resultado=num1*num2;
+                    alert("El resultado es "+resultado);
+                    break;
+
+                    case "s":
+                    num1=parseInt(prompt("Favor de escrbir un numero positivo menor de 57"));
+                    num2=parseInt(prompt("Favor de escrbir otro numero positivo menor de 57"))
+                    resultado=num1*num2;
+                    alert("El resultado es "+resultado);
+                    break;
+
+                    case "N":
+                    alert("Progama Finalizado");
+                    break;
+
+                    case "n":
+                    alert("Progama Finalizado");
+                      break;
+                    default:
+
+                  }
+
+
+
+
+
+</script>
+  </body>
+</html>

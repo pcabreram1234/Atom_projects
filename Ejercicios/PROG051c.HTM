@@ -1,0 +1,23 @@
+<HTML>
+<SCRIPT LANGUAGE="JavaScript">
+//PROG051c.HTM
+function media(n)
+{
+var x=new Array(n);
+var sum=0;
+var salida="";
+for(i=0;i<n;i++)
+{
+num=parseFloat(prompt("Escribe un valor de la serie ("+(i+1)+"º):",""));
+x[i]=num;
+salida=salida+x[i]+" - ";
+sum=sum+x[i];
+}
+salida=salida+"\nLa Media Aritmética de estos "+n+" números es "+(sum/n);
+return salida;
+}
+var valores;
+valores=parseInt(prompt("Escribe el número de elementos de la serie",""));
+alert(media(valores));
+</SCRIPT>
+</HTML>

@@ -1,0 +1,66 @@
+<HTML>
+<SCRIPT LANGUAGE="JavaScript">
+// PROG036.HTM
+/* Programa que lee la longitud de los 3 lados de un
+triángulo y analiza qué tipo de triángulo es: no es triángulo,
+equilátero, isósceles, escaleno, rectángulo */
+var lado1,lado2,lado3,auxiliar;
+var solucion="";
+lado1=prompt("Primer lado: ","");
+lado1=parseFloat(lado1);
+lado2=prompt("Segundo lado: ","");
+lado2=parseFloat(lado2);
+lado3=prompt("Tercer lado: ","");
+lado3=parseFloat(lado3);
+// Toma nota del uso de la variable auxiliar
+if (lado1>lado2)
+{
+auxiliar=lado1;
+lado1=lado2;
+lado2=auxiliar;
+}
+if (lado3<lado1)
+{
+auxiliar=lado3;
+lado3=lado2;
+lado2=lado1;
+lado1=auxiliar;
+}
+if (lado3<lado2)
+{
+auxiliar=lado2;
+lado2=lado3;
+lado3=auxiliar;
+}
+/* Vamos a ver si la ordenación es la correcta */
+solucion=solucion+lado1+"\t"+lado2+"\t"+lado3+"\n";
+/* Clasificación del triángulo */
+if (lado3>=lado1+lado2)
+{
+solucion=solucion+"Esto no es un triángulo";
+}
+else
+{
+if ((lado1==lado2)&&(lado2==lado3))
+{
+solucion=solucion+"Triángulo Equilátero";
+}
+else
+{
+if ((lado1==lado2)||(lado1==lado3)||(lado2==lado3))
+{
+solucion=solucion+"Triángulo Isósceles";
+}
+else
+{
+solucion=solucion+"Triángulo Escaleno";
+}
+if ((lado3<lado1+lado2)&&(lado3*lado3==lado1*lado1+lado2*lado2))
+{
+solucion=solucion+" además Rectángulo";
+}
+}
+}
+alert(solucion);
+</SCRIPT>
+</HTML>

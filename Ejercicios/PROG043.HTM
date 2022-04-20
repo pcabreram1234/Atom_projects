@@ -1,0 +1,18 @@
+<HTML>
+<SCRIPT LANGUAGE="JavaScript">
+// PROG043.HTM
+var num,resto;
+num=prompt("Escribe un número entero","");
+num=parseInt(num,10);
+for (i=2;i<num-1;i++)
+{
+resto=num % i;
+if ((resto==0) && (num != 2))
+{
+alert(num+" no es primo");
+break;
+}
+}
+alert("Si no ha aparecido un mensaje de que no es primo, entonces el número "+num+" es primo");
+</SCRIPT>
+</HTML>

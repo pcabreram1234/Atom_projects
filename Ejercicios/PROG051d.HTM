@@ -1,0 +1,33 @@
+<HTML>
+<SCRIPT LANGUAGE="JavaScript">
+//PROG051d.HTM
+var x=new Array(20);
+var sum=0;
+var med;
+var des=new Array(20);
+var sum1=0;
+var sum2=0;
+var desmed,vari,dt;
+var salida="VALORES:\n";
+var salida1="DESVIACIONES RESPECTO A LA MEDIA:\n";
+for(i=0;i<20;i++)
+{
+num=parseFloat(prompt("Escribe un valor de la serie ("+(i+1)+"º):",""));
+x[i]=num;
+salida=salida+x[i]+" - ";
+sum=sum+x[i];
+}
+med=sum/20;
+for(i=0;i<20;i++)
+{
+des[i]=Math.abs(x[i]-med);
+salida1=salida1+des[i]+" - ";
+sum1=sum1+des[i];
+sum2=sum2+(des[i]*des[i]);
+}
+desmed=sum1/20;
+vari=sum2/20;
+dt=Math.sqrt(vari);
+alert(salida+"\n"+"MEDIA ARITMÉTICA = "+med+"\n"+salida1+"\n"+"DESVIACIÓN MEDIA ="+desmed+"\nVARIANZA ="+vari+"\nDESVIACIÓN TÍPICA = "+dt);
+</SCRIPT>
+</HTML>

@@ -1,0 +1,42 @@
+<HTML>
+<SCRIPT LANGUAGE="JavaScript">
+// PROG040.HTM
+var opc="0";
+while (opc != "T")
+{
+opc=prompt("Escribe la letra de la opción deseada: (S) Sumar - (R) Raíz Cuadrada - (L) Logaritmo Neperiano - (A) Ayuda - (T) Terminar","");
+if (opc=="S") suma();
+if (opc=="R") raiz();
+if (opc=="L") logaritmo();
+if (opc=="A") ayuda();
+}
+function suma()
+{
+var a,b;
+a=prompt("Escribe el primer sumando","");
+a=parseFloat(a);
+b=prompt("Escribe el segundo sumando","");
+b=parseFloat(b);
+alert("La suma de "+ a +" y "+ b +" es "+(a+b));
+}
+function raiz()
+{
+var a;
+a=prompt("Escribe el radicando ","");
+a=parseFloat(a);
+alert("La raíz cuadrada de "+ a +" es "+Math.sqrt(a));
+}
+function logaritmo()
+{
+var x;
+x=prompt("Escribe un número positivo","");
+x=parseFloat(x);
+alert("El logaritmo neperiano de "+ x +" es "+Math.log(x));
+}
+
+function ayuda()
+{
+alert("Es bastante tonto que me pidas ayuda\npero aquí la tienes:\n\tPulsa S si quieres sumar\n\tPulsa R para la raíz cuadrada\n\tPulsa L para el logaritmo neperiano\n\tPulsa A para acceder a la ayuda\n\tPulsa T para acabar");
+}
+</SCRIPT>
+</HTML>

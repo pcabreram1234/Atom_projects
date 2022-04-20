@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+<script type="text/javascript">
+
+
+var opc;
+
+opc=parseInt(prompt("Favor de escribir de cuantas lineas desea el triangulo"));
+
+combinar(opc);
+
+
+
+function factorial(num)
+{
+var fact=1;
+num=parseInt(num);
+for(i=1;i<=num;i++) fact=fact*i;
+return fact;
+}
+
+function combinar(resultado)
+{
+  var adicional="";
+  var n=new Array(resultado);
+for (var i = 1; i <=n; i++) {
+  for (var j = 1; j <= n[i]; j++) {
+resultado=factorial(i)/factorial(j)*factorial(i-j);
+  }
+}
+resultado=resultado+adicional;
+return resultado;
+}
+
+
+</script>
+  </body>
+</html>

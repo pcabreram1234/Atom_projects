@@ -1,0 +1,46 @@
+<HTML>
+<SCRIPT LANGUAGE="JavaScript">
+// PROG042.HTM
+var salida="";
+salida=salida+"Enero tiene "+ diasmes(1) +" días\n";
+salida=salida+"Febrero tiene "+ diasmes(2) +" días\n";
+salida=salida+"Marzo tiene "+ diasmes(3) +" días\n";
+salida=salida+"Abril tiene "+ diasmes(4) +" días\n";
+salida=salida+"Mayo tiene "+ diasmes(5) +" días\n";
+salida=salida+"Junio tiene "+ diasmes(6) +" días\n";
+salida=salida+"Julio tiene "+ diasmes(7) +" días\n";
+salida=salida+"Agosto tiene "+ diasmes(8) +" días\n";
+salida=salida+"Septiembre tiene "+ diasmes(9) +" días\n";
+salida=salida+"Octubre tiene "+ diasmes(10) +" días\n";
+salida=salida+"Noviembre tiene "+ diasmes(11) +" días\n";
+salida=salida+"Diciembre tiene "+ diasmes(12) +" días\n";
+alert(salida);
+/* Función "diasmes" */
+function diasmes(mes)
+{
+var dias;
+switch(mes)
+{
+case 2:
+dias=28;
+break;
+case 1:
+case 3:
+case 5:
+case 7:
+case 8:
+case 10:
+case 12:
+dias=31;
+break;
+case 4:
+case 6:
+case 9:
+case 11:
+dias=30;
+break;
+}
+return dias;
+}
+</SCRIPT>
+</HTML>

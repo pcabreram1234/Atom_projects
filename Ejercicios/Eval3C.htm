@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <script type="text/javascript">
+      var x1, y1, x2, y2;
+      var resultado1, resultado2;
+      x1=parseInt(prompt("Favor de escribir el numerador de la primera fraccion"));
+      y1=parseInt(prompt("Favor de escrbir el denominador de la primera fraccion"));
+      x2=parseInt(prompt("Favor de escribir el numerador de la segunda fraccion"));
+      y2=parseInt(prompt("Favor de escribir el denominador de la segunda fraccion"));
+
+      resultado1=(x1*(MCD(y1,y2)/y1))+(x2*(MCD(y1,y2)/y2));
+      resultado2=MCD(y1,y2);
+      resultado1=resultado1*10;
+      resultado2=resultado2*10;
+      alert(x1+"+"+x2+"="+resultado1+"\n"+
+    "      "+y1+" "+y2+" "+resultado2);
+
+      function MCD(a,b)
+      {
+      var resto,aux;
+      if(a<b)
+      {
+      aux=a;
+      a=b;
+      b=aux;
+      }
+      if ((a%b)==0) resto=b;
+      while((a%b) !=0)
+      {
+      resto=a%b;
+      a=b;
+      b=resto;
+      }
+      return resto;
+      }
+
+    </script>
+
+  </body>
+</html>

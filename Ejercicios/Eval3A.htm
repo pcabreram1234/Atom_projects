@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+<script>
+
+var x, y;
+
+
+x=parseInt(prompt("Favor de escribir el primer numero"));
+y=parseInt(prompt("Favor de escribir el segundo numero"));
+var divisor=MCD(x,y);
+
+alert("El MCM de "+x+"y"+y+"Es "+x*y/MCD(x,y));
+
+
+  function MCD(a,b)
+{
+var resto,aux;
+if(a<b)
+{
+aux=a;
+a=b;
+b=aux;
+}
+if ((a%b)==0) resto=b;
+while((a%b) !=0)
+{
+resto=a%b;
+a=b;
+b=resto;
+}
+return resto;
+}
+
+
+
+</script>
+  </body>
+</html>

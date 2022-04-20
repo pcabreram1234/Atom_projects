@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="S" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+<script>
+
+var x, y;
+x=parseInt(prompt("Favor de escribir el primer numero"));
+y=parseInt(prompt("Favor de escribir el segundo numero"));
+alert(x+"\n"+
+"------------"+"\n"+
+y+"\n"+
+"La fracción simplificada es "+
+x/MCD(x,y)+"\n"+
+"-----------"+y/MCD(x,y));
+
+function MCD(a,b)
+{
+var resto,aux;
+if(a<b)
+{
+aux=a;
+a=b;
+b=aux;
+}
+if ((a%b)==0) resto=b;
+while((a%b) !=0)
+{
+resto=a%b;
+a=b;
+b=resto;
+}
+return resto;
+}
+
+</script>
+  </body>
+</html>

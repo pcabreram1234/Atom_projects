@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <script>
+      var a,b,c,d,e,f;
+      var pe,pv1,modv,pv2,pv3,modp,modfinal;
+      var resta1,resta2,resta3;
+
+a=parseFloat(prompt("Favor de escribir el primer numero del primer vector"));
+b=parseFloat(prompt("Favor de escribir el segundo numero del primer vector"));
+c=parseFloat(prompt("Favor de escribir el Tercer numero del primer vector"));
+d=parseFloat(prompt("Favor de escribir el primer numero del segundo vector"));
+e=parseFloat(prompt("Favor de escribir el segundo numero del segundo vector"));
+f=parseFloat(prompt("Favor de escribir el tercer numero del segundo vector"));
+pe=(a*d)+(b*e)+(c*f);
+pv1=(b*f)-(e*c);
+pv2=(d*c)-(a*f);
+pv3=(a*e)-(b*d);
+modv=Math.sqrt((a*a)+(b*b)+(c*c));
+modp=Math.sqrt((d*d)+(e*e)+(f*f));
+resta1=a-d;
+resta2=e-b;
+resta3=f-c;
+modfinal=Math.sqrt(Math.pow(resta1, 2)+Math.pow(resta2, 2)+Math.pow(resta3, 2));
+//modfinal=Math.pow(modv,modp);
+
+alert("(v="+a+","+b+","+c+")"+" "+"p"+d+","+e+","+f+"\n"+
+"Producto escalar de los dos vectores: "+pe+"\n"+
+"Producto vectorial de los dos vectores: v^p=("+pv1+","+pv2+","+pv3+")"+"\n"+
+"Modulos:"+"\n"+
+"|v|="+modv+"\n"+
+"|p|="+modp+"\n"+
+"|v^p|="+modfinal);
+
+    </script>
+  </body>
+</html>

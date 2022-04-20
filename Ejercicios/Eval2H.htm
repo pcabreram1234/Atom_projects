@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <script>
+      var hip, cat, resultado, opc;
+      hip=prompt("Favor de introducir el valor de la hipotenusa");
+      cat=prompt("Favor de introducir el valor del cateto");
+      hip=parseInt(hip);
+      cat=parseInt(cat);
+
+
+if (cat>hip) {
+  alert("El cateto es mayor que la hipotenusa");
+}
+
+else  {
+  resultado=parseInt((hip*hip)-(cat*cat));
+  resultado=Math.sqrt(resultado);
+  alert("El resultado es "+resultado);
+  opc=prompt("Volver a intentarlo? S/N");
+  switch (opc) {
+
+    case "S":
+
+    hip=prompt("Favor de introducir el valor de la hipotenusa");
+    cat=prompt("Favor de introducir el valor del cateto");
+    hip=parseInt(hip);
+    cat=parseInt(cat);
+  if (hip==cat) {
+  alert("El cateto es mayor que la hipotenusa");
+  }
+  else  {
+  resultado=parseInt((hip*hip)-(cat*cat));
+  resultado=Math.sqrt(resultado);
+  alert("El resultado es "+resultado);
+  }
+      break;
+    default:
+
+    case "N":
+      alert("Programa terminado");
+      break;
+  }
+
+}
+
+
+
+
+    </script>
+  </body>
+</html>

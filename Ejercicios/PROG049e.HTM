@@ -1,0 +1,39 @@
+<HTML>
+<SCRIPT LANGUAGE="JavaScript">
+// PROG049e.HTM
+function pot()
+{
+var b,e;
+var resul;
+b=parseFloat(prompt("Escribe la base de la potencia",""));
+e=parseFloat(prompt("Escribe el exponente",""));
+resul=b+" elevado a "+e+" es "+Math.pow(b,e);
+alert(resul);
+}
+function raiz()
+{
+var b,e;
+var resul;
+b=parseFloat(prompt("Escribe el radicando de la raíz",""));
+e=parseFloat(prompt("Escribe el índice de la raíz",""));
+resul="La raíz "+e+"-ésima de "+b+" es "+Math.pow(b,1/e);
+alert(resul);
+}
+var opc="s"
+while(opc != "S")
+{
+opc=prompt("Escribe la opción que desees:\n(P)Calcular una potencia (R)Calcular una raíz (S)Salir del programa","S");
+switch(opc)
+{
+case "P":
+case "p":
+pot();
+break;
+case "R":
+case "r":
+raiz();
+break;
+}
+}
+</SCRIPT>
+</HTML>

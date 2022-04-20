@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <script>
+    var area, base, altura, opc, radio, opc1;
+    var pi=3.14;
+
+opc=prompt("Bienvenido, favor de elegir la operación que desee "+ "\n"+
+"1-Area de un triangulo  "+"2-Area de un rectangulo  "+"3-Area de un circulo  "+"4-Salir");
+
+if (opc==1) {
+  base=parseInt(prompt("Favor de introducir la base"));
+  altura=parseInt(prompt("Favor de introducir la altura"));
+  area=base*altura;
+  alert("El area del triagulo es igual a "+area);
+   opc1=prompt("Desea volver a intentarlo? S/N");
+}
+
+if (opc==2) {
+  base=parseInt(prompt("Favor de introducir la base"));
+  altura=parseInt(prompt("Favor de introducir la altura"));
+  area=base*altura;
+  alert("El area del rectangulo es igual a "+area);
+   opc1=prompt("Desea volver a intentarlo? S/N");
+}
+
+if (opc==3) {
+  radio=parseInt(prompt("Favor de introducir el area"));
+  area=pi*(radio*radio);
+  alert("El area del circulo es igual a "+area);
+   opc1=prompt("Desea volver a intentarlo? S/N");
+}
+
+ if (opc==4) {
+   alert("Programa terminado");
+ }
+ 
+while (opc1=="S") {
+  opc=prompt("Bienvenido, favor de elegir la operación que desee "+ "\n"+
+  "1-Area de un triangulo  "+"2-Area de un rectangulo  "+"3-Area de un circulo  "+"4-Salir");
+
+  if (opc==1) {
+    base=parseInt(prompt("Favor de introducir la base"));
+    altura=parseInt(prompt("Favor de introducir la altura"));
+    area=base*altura;
+    alert("El area del triagulo es igual a "+area);
+     opc1=prompt("Desea volver a intentarlo? S/N");
+
+  }
+
+  if (opc==2) {
+    base=parseInt(prompt("Favor de introducir la base"));
+    altura=parseInt(prompt("Favor de introducir la altura"));
+    area=base*altura;
+    alert("El area del rectangulo es igual a "+area);
+     opc1=prompt("Desea volver a intentarlo? S/N");
+  }
+
+  if (opc==3) {
+    radio=parseInt(prompt("Favor de introducir el area"));
+    area=pi*(radio*radio);
+    alert("El area del circulo es igual a "+area);
+     opc1=prompt("Desea volver a intentarlo? S/N");
+  }
+
+   if (opc==4) {
+     alert("Programa terminado");
+     opc1="N";
+   }
+}
+
+while (opc1=="s") {
+  opc=prompt("Bienvenido, favor de elegir la operación que desee "+ "\n"+
+  "1-Area de un triangulo  "+"2-Area de un rectangulo  "+"3-Area de un circulo  "+"4-Salir");
+
+  if (opc==1) {
+    base=parseInt(prompt("Favor de introducir la base"));
+    altura=parseInt(prompt("Favor de introducir la altura"));
+    area=base*altura;
+    alert("El area del triagulo es igual a "+area);
+     opc1=prompt("Desea volver a intentarlo? S/N");
+  }
+
+  if (opc==2) {
+    base=parseInt(prompt("Favor de introducir la base"));
+    altura=parseInt(prompt("Favor de introducir la altura"));
+    area=base*altura;
+    alert("El area del rectangulo es igual a "+area);
+     opc1=prompt("Desea volver a intentarlo? S/N");
+  }
+
+  if (opc==3) {
+    radio=parseInt(prompt("Favor de introducir el area"));
+    area=pi*(radio*radio);
+    alert("El area del circulo es igual a "+area);
+     opc1=prompt("Desea volver a intentarlo? S/N");
+  }
+
+   if (opc==4) {
+     alert("Programa terminado");
+     opc1="N";
+   }
+}
+
+    </script>
+  </body>
+</html>

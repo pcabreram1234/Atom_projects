@@ -1,0 +1,19 @@
+<html>
+<SCRIPT LANGUAGE="JavaScript">
+// PROG058.HTM
+// Programa que determina el número de "a" o "A" que aparece en un texto */
+
+var texto;
+texto=prompt("Escribe el texto que quieras:","");
+alert("Número de a y de A = "+BuscaLetra(texto));
+function BuscaLetra(x)
+{
+var numero=0;
+for(i=0;i<x.length;i++)
+{
+if(x.charAt(i)=="a" || x.charAt(i)=="A") numero++;
+}
+return numero;
+}
+</SCRIPT>
+</HTML>

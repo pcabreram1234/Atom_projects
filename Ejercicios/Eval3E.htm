@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+<script type="text/javascript">
+
+var x,x1,x2,y,y1,y2,z,z1,z2;
+
+x=parseInt(prompt("Favor de introducir el primer numero del Vector A"));
+x1=parseInt(prompt("Favor de introducir el segundo numero del Vector A"));
+x2=parseInt(prompt("Favor de introducir el tercer numero del Vector A"));
+y=parseInt(prompt("Favor de introducir el primer numero del Vector B"));
+y1=parseInt(prompt("Favor de introducir el segundo numero del Vector B"));
+y2=parseInt(prompt("Favor de introducir el tercer numero del Vector B"));
+z=parseInt(prompt("Favor de introducir el primer numero del Vector C"));
+z1=parseInt(prompt("Favor de introducir el segundo numero del Vector C"));
+z2=parseInt(prompt("Favor de introducir el tercer numero del Vector C"));
+
+alert("El area del triangulo de vertices A"+"("+x+","+x1+","+x2+")"+" "+"B("+y+","+y1+y2+")"+" "+"C("+z+","+z1+","+z2+") es "+triangulo(x,x1,x2,y,y1,y2,z,z1,z2)/2);
+
+function triangulo(a1,a2,a3,b1,b2,b3,c1,c2,c3)
+{
+var ab, ab1, ab2;
+var ac, ac1, ac2;
+var i,j,k, area;
+ab=b1-a1;
+ab1=b2-a2;
+ab2=b3-a3
+ac=c1-a1;
+ac1=c2-a2;
+ac2=c3-a3;
+i=(ab1*ac2)-(ac1*ab2);
+j=(ab*ac2)-(ab2*ac);
+k=(ab*ac1)-(ac*ab1)
+area=Math.sqrt((i*i)+(j*j)+(k*k));
+return area;
+//ab,ab1,ab2
+//ac,ac1,ac2
+//((ab2*ac2)-(ac1*ab2)-(ab*ac2)-(ac*ac2))+((ab*ac1)-ac*ab1))
+}
+
+</script>
+  </body>
+</html>

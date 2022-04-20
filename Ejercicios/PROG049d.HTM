@@ -1,0 +1,38 @@
+<HTML>
+<SCRIPT LANGUAGE="JavaScript">
+// PROG049d.HTM
+function imagi()
+{
+return "Soluciones Imaginarias";
+}
+function doble(a,b)
+{
+return -b/(2*a);
+}
+function dos(a,b,disc)
+{
+var x1,x2;
+x1=(-b+Math.sqrt(disc))/(2*a);
+x2=(-b-Math.sqrt(disc))/(2*a);
+return "x1 = "+x1+" , "+"x2 = "+x2;
+}
+var x,y,z,d;
+var salida="";
+x=parseFloat(prompt("Ecuación ax²+bx+c=0\nEscribe el valor de 'a'",""));
+y=parseFloat(prompt("Ecuación ax²+bx+c=0\nEscribe el valor de 'b'",""));
+z=parseFloat(prompt("Ecuación ax²+bx+c=0\nEscribe el valor de 'c'",""));
+d=y*y-4*x*z;
+if(d<0)
+{
+alert(imagi());
+}
+if(d==0)
+{
+alert("Una solución, que es "+doble(x,y));
+}
+if(d>0)
+{
+alert("Dos soluciones:\n"+dos(x,y,d));
+}
+</SCRIPT>
+</HTML>

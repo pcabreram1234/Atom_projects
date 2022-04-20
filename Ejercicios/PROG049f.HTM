@@ -1,0 +1,43 @@
+<HTML>
+<SCRIPT LANGUAGE="JavaScript">
+// PROG049f.HTM
+function cuali(notanum)
+{
+switch(notanum)
+{
+case 0:
+case 1:
+return "Muy Deficiente";
+break;
+case 2:
+case 3:
+return "Deficiente";
+break;
+case 4:
+return "Insuficiente";
+break;
+case 5:
+return "Suficiente";
+break;
+case 6:
+return "Bien";
+break;
+case 7:
+case 8:
+return "Notable";
+break;
+case 9:
+return "Excelente";
+break;
+case 10:
+return "Matricula de Honor";
+break;
+}
+}
+var num,bien,nota,notacual;
+num=parseInt(prompt("Escribe el número total de preguntas",""));
+bien=parseInt(prompt("Escribe el número de respuestas acertadas",""));
+nota=parseInt(10*bien/num);
+alert("La nota cualitativa es "+cuali(nota));
+</SCRIPT>
+</HTML>
